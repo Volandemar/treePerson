@@ -5,14 +5,16 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
         List<Person> listPerson = new ArrayList<>();
-        listPerson.add(new Person("Nikolay", "Kuplinkov", 21));
-        listPerson.add(new Person("Helena", "Kislovoskova", 29));
-        listPerson.add(new Person("Olya", "Alientkova", 29));
-        listPerson.add(new Person("Ivan", "Popov", 35));
-        listPerson.add(new Person("Sergey", "Kuplinkov", 25));
+        listPerson.add(new Person("Николай", "Куплинов-Морозов", 21));
+        listPerson.add(new Person("Елена", "Корпетова Великая", 29));
+        listPerson.add(new Person("Оля", "Алетнова красна девица", 29));
+        listPerson.add(new Person("Иван", "Попов из села Поповки", 35));
+        listPerson.add(new Person("Сергей", "Коробкин-Мясников-Иванов", 25));
         System.out.println("Список без сотритровки: " + listPerson);
-        Collections.sort(listPerson, new sortPersonLength(4));
+        Collections.sort(listPerson, new SortPersonLength(4));
         System.out.println("Список после сортировки: " + listPerson);
+
+
 
     }
 }
